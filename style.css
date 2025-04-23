@@ -51,6 +51,7 @@ form .display input{
     flex: 1;
     font-size: 45px;
     box-shadow: none;
+    color:black;
 }
 form input.equal{
     width: 145px;
