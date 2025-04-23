@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
+    
 }
 
 .container{
@@ -12,11 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .calculator{
     background: #3a4452;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 .calculator form input{
     border: 0;
@@ -30,11 +32,19 @@
     color: white;
     cursor: pointer;
     margin: 10px;
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+
+}
+.calculator form input:active {
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
 }
 form .display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
+    background-color: chartreuse;
+    border-radius: 30px;
 }
 form .display input{
     text-align: right;
